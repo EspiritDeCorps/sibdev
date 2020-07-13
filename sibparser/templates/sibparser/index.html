@@ -1,0 +1,22 @@
+<textarea cols="100" rows="10" readonly>
+    {% if sites_list %}
+    {% for site in successList %}
+{{ site}}
+    {% endfor %}
+    {% else %}
+        Нет обработанных сайтов
+{% endif %}
+
+</textarea>
+
+<textarea cols="100" rows="10" readonly>
+{% if sites_list %}
+    {% for site in sites_list %}
+{{ site }}
+    {% endfor %}
+    {% else %}
+        Нет обработанных сайтов
+{% endif %}
+</textarea>
+
+
